@@ -40,8 +40,8 @@ cd cyberdeck-installer
 
 3. Terminal neu starten
 Nach der Installation:
-• 	PowerShell 7: 
-• 	PowerShell 5: 
+• 	PowerShell 7: clear
+• 	PowerShell 5: cl
 Und dein Cyberdeck fährt hoch.
 
 Anpassung
