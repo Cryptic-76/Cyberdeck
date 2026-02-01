@@ -53,5 +53,6 @@ Profile ändern
 - PS7: $HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 - PS5: $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
+<img width="1236" height="655" alt="2026-02-01 20_21_18-General — Mozilla Firefox" src="https://github.com/user-attachments/assets/ae7307ef-5ee4-494f-ae7a-50fda64b33da" />
 
 
