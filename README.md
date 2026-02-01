@@ -37,3 +37,21 @@ git clone <REPO_URL>
 cd cyberdeck-installer
 
 2. Script ausführen
+
+3. Terminal neu starten
+Nach der Installation:
+• 	PowerShell 7: 
+• 	PowerShell 5: 
+Und dein Cyberdeck fährt hoch.
+
+Anpassung
+Starship‑Config ändern
+Bearbeite einfach:
+- $HOME\starship-ps7.toml
+- $HOME\starship-ps5.toml
+Profile ändern
+- PS7: $HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+- PS5: $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+
+
+
