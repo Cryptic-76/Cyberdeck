@@ -47,8 +47,8 @@ Und dein Cyberdeck fährt hoch.
 Anpassung
 Starship‑Config ändern
 Bearbeite einfach:
-- $HOME\starship-ps7.toml
-- $HOME\starship-ps5.toml
+- $HOME\.config\starship-ps7.toml
+- $HOME\.config\starship-ps5.toml
 Profile ändern
 - PS7: $HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 - PS5: $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
