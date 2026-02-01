@@ -8,12 +8,12 @@ Der Cyberdeck Installer richtet eine vollständig personalisierte, neon‑knalli
 
 Das Tool installiert automatisch:
 
-• 	Starship Prompt
-• 	PS7‑Profil (mit Unicode‑Glitch‑Header, animierten Gradient‑Bars, animierter Boot‑Sequence)
-• 	PS5‑Profil (ASCII‑kompatibel, gleiche Features)
-• 	starship-ps7.toml (voller Cyberpunk‑Look)
-• 	starship-ps5.toml (PS5‑kompatibel, identisch aufgebaut)
-• 	automatische Backups aller bestehenden Dateien
+- Starship Prompt
+- PS7‑Profil (mit Unicode‑Glitch‑Header, animierten Gradient‑Bars, animierter Boot‑Sequence)
+- PS5‑Profil (ASCII‑kompatibel, gleiche Features)
+- starship-ps7.toml (voller Cyberpunk‑Look)
+- starship-ps5.toml (PS5‑kompatibel, identisch aufgebaut)
+- automatische Backups aller bestehenden Dateien
 
 Damit wird jede PowerShell‑Session zu einem Cinematic Cyberpunk Terminal.
 
