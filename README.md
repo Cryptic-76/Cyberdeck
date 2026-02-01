@@ -70,7 +70,8 @@ Profile ändern
 - PS7: $HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 - PS5: $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
-<img width="1240" height="662" alt="2026-02-01 22_33_29-Greenshot" src="https://github.com/user-attachments/assets/7964789d-7199-4072-a959-ac8775213d30" />
+<img width="1226" height="649" alt="2026-02-01 23_14_28-Greenshot" src="https://github.com/user-attachments/assets/a914cf25-29ed-48ad-864c-79851063a03f" />
+
 
 
 
