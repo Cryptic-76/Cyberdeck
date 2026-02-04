@@ -52,7 +52,7 @@ Lade die Release‑ZIP herunter und entpacke sie **in einen beliebigen Ordner**.
 ### 2. Stelle sicher, dass folgende Dateien im selben Ordner liegen:
 - `Cyberdeck.zip`  
 - `nmap-7.98-setup.exe`  
-- `Install-Cyberdeck.ps1`  
+- `Cyberdeck_Installer_v1.2.ps1`  
 
 ### 3. Installer ausführen
 Rechtsklick → **Mit PowerShell ausführen**
