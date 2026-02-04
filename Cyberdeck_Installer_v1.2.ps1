@@ -1,10 +1,10 @@
 <#
-    Cyberdeck Installer Script
-    Autor: Jörn
+    Cyberdeck Installer Script v1.2
+    Autor: Jörn Andre Peters
     Zweck: Installiert das Cyberdeck PowerShell Modul + nmap + Starship + Profilpatch
 #>
 
-Write-Host "=== CYBERDECK INSTALLER ===" -ForegroundColor Cyan
+Write-Host "=== CYBERDECK INSTALLER v1.2 ===" -ForegroundColor Cyan
 Write-Host ""
 
 # ------------------------------------------------------------
@@ -79,7 +79,6 @@ if (-not $nmapCmd) {
     Write-Host "[INFO] Starte nmap Setup (Silent, falls unterstützt)..." -ForegroundColor Cyan
 
     try {
-        # Viele NSIS/Standard-Installer akzeptieren /S für silent
         Start-Process -FilePath $NmapInstaller.FullName -ArgumentList "/S" -Wait
     }
     catch {
@@ -87,7 +86,6 @@ if (-not $nmapCmd) {
         exit 1
     }
 
-    # Nachinstallation erneut prüfen
     $nmapCmd = Get-Command nmap -ErrorAction SilentlyContinue
     if (-not $nmapCmd) {
         Write-Host "[FEHLER] nmap scheint nach der Installation nicht im PATH zu sein." -ForegroundColor Red
@@ -102,9 +100,7 @@ else {
 }
 
 # ------------------------------------------------------------
-# 5. Starship prüfen (nur prüfen, nicht über winget installieren)
-#    → Du kannst hier optional auch einen lokalen Installer einbauen,
-#      aktuell wird nur geprüft und ggf. gewarnt.
+# 5. Starship installieren (über winget)
 # ------------------------------------------------------------
 
 Write-Host ""
@@ -113,10 +109,31 @@ Write-Host "[INFO] Prüfe Starship Installation..." -ForegroundColor Cyan
 $StarshipInstalled = Get-Command starship -ErrorAction SilentlyContinue
 
 if (-not $StarshipInstalled) {
-    Write-Host "[WARNUNG] Starship ist nicht installiert." -ForegroundColor Yellow
-    Write-Host "Du kannst Starship manuell installieren von:" -ForegroundColor Yellow
-    Write-Host "https://starship.rs" -ForegroundColor Yellow
-    Write-Host "Das Profil wird trotzdem vorbereitet." -ForegroundColor Yellow
+
+    Write-Host "[INFO] Starship nicht gefunden. Installiere über winget..." -ForegroundColor Yellow
+
+    $Winget = Get-Command winget -ErrorAction SilentlyContinue
+    if (-not $Winget) {
+        Write-Host "[FEHLER] winget ist nicht verfügbar. Starship kann nicht automatisch installiert werden." -ForegroundColor Red
+        Write-Host "Bitte installiere Starship manuell von https://starship.rs" -ForegroundColor Yellow
+    }
+    else {
+        try {
+            winget install --id Starship.Starship -e --source winget --accept-package-agreements --accept-source-agreements
+        }
+        catch {
+            Write-Host "[FEHLER] winget konnte Starship nicht installieren." -ForegroundColor Red
+            Write-Host "Bitte installiere Starship manuell von https://starship.rs" -ForegroundColor Yellow
+        }
+    }
+
+    $StarshipInstalled = Get-Command starship -ErrorAction SilentlyContinue
+    if ($StarshipInstalled) {
+        Write-Host "[OK] Starship erfolgreich installiert." -ForegroundColor Green
+    }
+    else {
+        Write-Host "[WARNUNG] Starship ist weiterhin nicht installiert." -ForegroundColor Yellow
+    }
 }
 else {
     Write-Host "[OK] Starship bereits installiert." -ForegroundColor Green
@@ -142,57 +159,36 @@ format = \"\"\"
 [](#ff00ff)\$os\$username[](bg:#00eaff fg:#ff00ff)\$directory[](bg:#1a1a1a fg:#00eaff)\$git_branch\$git_status[](bg:#ff0099 fg:#1a1a1a)\$time[](fg:#ff0099)\$character
 \"\"\"
 
-# ───────────────────────────────────────────────────────────────
-#  OS Segment
-# ───────────────────────────────────────────────────────────────
 [os]
 format = "[ ](bg:#ff00ff fg:#000000)"
 disabled = false
 
-# ───────────────────────────────────────────────────────────────
-#  Username
-# ───────────────────────────────────────────────────────────────
 [username]
 style_user = "bg:#ff00ff fg:#000000"
 style_root = "bg:#ff00ff fg:#000000"
 format = "[ \$user ](\$style)"
 disabled = false
 
-# ───────────────────────────────────────────────────────────────
-#  Directory
-# ───────────────────────────────────────────────────────────────
 [directory]
 style = "bg:#00eaff fg:#000000"
 format = "[ \$path ](\$style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-# ───────────────────────────────────────────────────────────────
-#  Git Branch
-# ───────────────────────────────────────────────────────────────
 [git_branch]
 style = "bg:#1a1a1a fg:#00eaff"
 format = "[  \$branch ](\$style)"
 
-# ───────────────────────────────────────────────────────────────
-#  Git Status
-# ───────────────────────────────────────────────────────────────
 [git_status]
 style = "bg:#1a1a1a fg:#faff00"
 format = "[ \$all_status ](\$style)"
 
-# ───────────────────────────────────────────────────────────────
-#  Time
-# ───────────────────────────────────────────────────────────────
 [time]
 disabled = false
 time_format = "%H:%M:%S"
 style = "bg:#ff0099 fg:#000000"
 format = "[  \$time ](\$style)"
 
-# ───────────────────────────────────────────────────────────────
-#  Prompt Character
-# ───────────────────────────────────────────────────────────────
 [character]
 success_symbol = "[❯](fg:#ff00ff)"
 error_symbol   = "[❯](fg:#ff0033)"
@@ -220,18 +216,15 @@ $ProfileContent = @"
 
 Import-Module Cyberdeck
 
-# Cyberdeck Startsequenz
 Show-GlitchHeader
 Show-GradientBars
 Show-BootSequence
 Show-GlitchIP
 
-# Aliases
 Set-Alias clear Clear-Glitch
 Set-Alias nmapp Show-CyberdeckNmapPanel
 Set-Alias portm Start-PortMonitor
 
-# Starship
 \$env:STARSHIP_CONFIG = "\$HOME\.config\starship-ps7.toml"
 Invoke-Expression (&starship init powershell)
 "@
