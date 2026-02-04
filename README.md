@@ -1,77 +1,93 @@
-# Cyberdeck
-Ein Cyperpunk Mod für das Windows-Terminal
+# ⚡ Cyberdeck PowerShell Environment v1.2
+Ein vollständig modulares, cyberpunk‑inspiriertes PowerShell‑Framework mit animierter Startsequenz, Port‑Monitoring, Nmap‑Control‑Panel, Fingerprint‑Datenbank und einem maßgeschneiderten Starship‑Prompt.
 
- CYBERDECK INSTALLER — README.md
- 
-⚡ Überblick
-Der Cyberdeck Installer richtet eine vollständig personalisierte, neon‑knallige PowerShell‑Umgebung ein — optimiert für PowerShell 7 und PowerShell 5.
+Version **1.2** enthält:
+- automatischen Modul‑Installer
+- integrierten **nmap‑Installer (lokal, offline)**
+- Cyberpunk‑Starship‑Theme
+- automatisches Profil‑Patching
+- vollständige Cyberdeck‑Startsequenz
 
-Das Tool installiert automatisch:
+---
 
-- Starship Prompt
-- PS7‑Profil (mit Unicode‑Glitch‑Header, animierten Gradient‑Bars, animierter Boot‑Sequence)
-- PS5‑Profil (ASCII‑kompatibel, gleiche Features)
-- starship-ps7.toml (voller Cyberpunk‑Look)
-- starship-ps5.toml (PS5‑kompatibel, identisch aufgebaut)
-- automatische Backups aller bestehenden Dateien
+## 🚀 Features
 
-Damit wird jede PowerShell‑Session zu einem Cinematic Cyberpunk Terminal.
+### 🔥 Cyberdeck Startsequenz
+Beim Start der PowerShell:
+- Glitch‑Header  
+- Neon‑Gradient‑Bars  
+- Boot‑Sequence  
+- Öffentliche IP‑Anzeige  
 
-🚀 Features
+### 🛰 Port‑Monitor (Live)
+- Echtzeit‑Überwachung aller TCP‑Ports  
+- Threat‑Level‑Analyse  
+- Anomaly‑Detection  
+- Fingerprint‑Persistenz (Signatur, Pfad, Zertifikat)  
+- Logging in `$HOME\Cyberdeck-PortMonitor`  
 
-🔥 PowerShell 7
+### 🧠 Fingerprint‑Datenbank
+- JSON‑basierte Prozess‑Fingerprint‑DB  
+- Automatische Signatur‑Analyse  
+- Persistente Prozess‑Historie  
 
-- Glitch‑Header mit Unicode‑Symbolen
-- Neon‑Gradient‑Bars (animiert)
-- Boot‑Sequence (animiert)
-- Öffentliche IP‑Anzeige
-- Voller Starship‑Neon‑Prompt
+### 🕶 Nmap Control Panel
+- Vollständiges Nmap‑Frontend in PowerShell  
+- Presets (Quick, Full, Aggressive, Stealth, Vuln, Recon)  
+- Live‑Progress‑Animation  
+- Automatische XML → HTML‑Report‑Generierung  
 
-🔥 PowerShell 5
+### 🎨 Cyberpunk Starship Prompt
+- PowerShell‑7 Theme  
+- Neon‑Segment‑Design  
+- Git‑Status, Zeit, Directory, OS‑Badge  
 
-- ASCII‑kompatible Gradient‑Bars (animiert)
-- Boot‑Sequence (animiert)
-- Glitch‑Header (ASCII‑Version)
-- Öffentliche IP‑Anzeige
-- PS5‑kompatible Starship‑Config
+---
 
-🔧 Installer‑Funktionen
+## 📦 Installation
 
-- Automatische Starship‑Installation via
-- Automatische Erstellung aller benötigten Ordner
-- Automatische Backups vorhandener Profile & TOMLs
-- Vollständige Neuinstallation in einem einzigen Durchlauf
+### 1. ZIP herunterladen
+Lade die Release‑ZIP herunter und entpacke sie **in einen beliebigen Ordner**.
 
-1. Installation
-git clone <REPO_URL>
-cd cyberdeck-installer
+### 2. Stelle sicher, dass folgende Dateien im selben Ordner liegen:
+- `Cyberdeck.zip`  
+- `nmap-7.98-setup.exe`  
+- `Install-Cyberdeck.ps1`  
 
-2. Script ausführen
+### 3. Installer ausführen
+Rechtsklick → **Mit PowerShell ausführen**
 
-3. Terminal neu starten
+Der Installer:
+- findet `Cyberdeck.zip` automatisch  
+- findet `nmap-7.98-setup.exe` automatisch  
+- installiert das Modul nach  
+  `C:\Users\<USER>\Documents\PowerShell\Modules\Cyberdeck\`
+- installiert nmap lokal  
+- erzeugt das Starship‑Theme  
+- patched dein PowerShell‑Profil  
+- aktiviert die Startsequenz  
 
-Nach der Installation:
-- PowerShell 7: clear schreiben
-- PowerShell 5: cl schreiben
+### 4. PowerShell neu starten
 
-Und dein Cyberdeck fährt hoch.
+---
 
-Anpassung
+## 🛠 Voraussetzungen
 
-Starship‑Config ändern
+- Windows 10/11  
+- PowerShell 7 empfohlen  
+- Administratorrechte für nmap‑Installation  
+- Optional: Starship (wird erkannt, aber nicht automatisch installiert)
 
-Bearbeite einfach:
+---
 
-- $HOME\\.config\starship-ps7.toml
-- $HOME\\.config\starship-ps5.toml
+## 🧩 Aliases
 
-Profile ändern
+| Alias | Funktion |
+|-------|----------|
+| `clear` | Clear‑Glitch (Cyberdeck‑Clear) |
+| `nmapp` | Nmap‑Control‑Panel |
+| `portm` | Port‑Monitor starten |
 
-- PS7: $HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
-- PS5: $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+---
 
-<img width="1226" height="649" alt="2026-02-01 23_14_28-Greenshot" src="https://github.com/user-attachments/assets/a914cf25-29ed-48ad-864c-79851063a03f" />
-
-
-
-
+## 📁 Ordnerstruktur nach Installation
