@@ -28,7 +28,10 @@ Beim Start der PowerShell:
 - Threat‑Level‑Analyse  
 - Anomaly‑Detection  
 - Fingerprint‑Persistenz (Signatur, Pfad, Zertifikat)  
-- Logging in `$HOME\Cyberdeck-PortMonitor`  
+- Logging in `$HOME\Cyberdeck-PortMonitor`
+
+<img width="1219" height="511" alt="2026-02-04 23_18_48-Cyberdeck_README md at main · Cryptic-76_Cyberdeck — Mozilla Firefox" src="https://github.com/user-attachments/assets/11cf9579-6477-4398-8e23-590dd0ea6968" />
+
 
 ### 🧠 Fingerprint‑Datenbank
 - JSON‑basierte Prozess‑Fingerprint‑DB  
