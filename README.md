@@ -1,4 +1,8 @@
 # ⚡ Cyberdeck PowerShell Environment v1.2
+
+<img width="1226" height="649" alt="2026-02-01 23_14_28-Greenshot" src="https://github.com/user-attachments/assets/d8e32e6f-0253-4467-b053-9a449c6fe35e" />
+
+
 Ein vollständig modulares, cyberpunk‑inspiriertes PowerShell‑Framework mit animierter Startsequenz, Port‑Monitoring, Nmap‑Control‑Panel, Fingerprint‑Datenbank und einem maßgeschneiderten Starship‑Prompt.
 
 Version **1.2** enthält:
