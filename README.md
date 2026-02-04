@@ -86,7 +86,7 @@ Der Installer:
 - Windows 10/11  
 - PowerShell 7 empfohlen  
 - Administratorrechte für nmap‑Installation  
-- Optional: Starship (wird erkannt, aber nicht automatisch installiert)
+- Optional: Starship (wird erkannt, und automatisch installiert)
 
 ---
 
