@@ -72,7 +72,7 @@ Der Installer:
 - findet `nmap-7.98-setup.exe` automatisch  
 - installiert das Modul nach  
   `C:\Users\<USER>\Documents\PowerShell\Modules\Cyberdeck\`
-- installiert nmap lokal  
+- installiert nmap lokal (eventuell muss noch der Nmap-Pfad gesetzt werden)
 - erzeugt das Starship‑Theme  
 - patched dein PowerShell‑Profil  
 - aktiviert die Startsequenz  
