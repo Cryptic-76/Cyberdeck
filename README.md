@@ -91,3 +91,24 @@ Der Installer:
 ---
 
 ## 📁 Ordnerstruktur nach Installation
+
+
+---
+
+## 🧨 Deinstallation (manuell)
+
+1. Lösche den Ordner:  
+   `Documents\PowerShell\Modules\Cyberdeck`
+2. Entferne die Cyberdeck‑Zeilen aus deinem `$PROFILE`
+3. Optional: lösche  
+   `.config\starship-ps7.toml`
+
+---
+
+## 📜 Lizenz
+Dieses Projekt ist frei nutzbar und modifizierbar.
+
+---
+
+## 💬 Kontakt
+Erstellt von **Jörn Andre Peters** – Cyberpunk Terminal Engineering  
