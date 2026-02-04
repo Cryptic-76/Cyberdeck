@@ -44,7 +44,7 @@ Beim Start der PowerShell:
 - Live‑Progress‑Animation  
 - Automatische XML → HTML‑Report‑Generierung
 
-<img width="1232" height="417" alt="2026-02-04 23_13_11-Cryptic-76_Cyberdeck_ Ein Cyperpunk Mod für das Windows-Terminal — Mozilla Firef" src="https://github.com/user-attachments/assets/b8219325-064b-4741-b02e-87b25c817015" />
+<img width="1235" height="405" alt="2026-02-05 00_12_05-Editing Cyberdeck_README md at main · Cryptic-76_Cyberdeck — Mozilla Firefox" src="https://github.com/user-attachments/assets/b37d2123-6eac-4400-b9ae-3824b2523bcd" />
 
 
 ### 🎨 Cyberpunk Starship Prompt
