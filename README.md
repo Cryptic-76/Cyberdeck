@@ -182,5 +182,8 @@ Documents\PowerShell\Modules\Cyberdeck
 Frei nutzbar und modifizierbar.
 
 💬 Kontakt
-Erstellt von Jörn Andre Peters
+
+Erstellt von:
+- Jörn Andre Peters
+
 Cyberpunk Terminal Engineering
