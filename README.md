@@ -115,16 +115,18 @@ $HOME\Cyberdeck-PortMonitor
 - Custom Cyberdeck‑Layout
 
 📦 Installation
+
 1. Dateien vorbereiten
 Lege folgende Dateien in denselben Ordner:
 
-Cyberdeck.zip
-nmap-7.98-setup.exe
-Cyberdeck_Installer_v1.3.ps1
-(optional) C:\ProgramData\PowerShellArsenal\
+- Cyberdeck.zip
+- nmap-7.98-setup.exe
+- Cyberdeck_Installer_v1.3.ps1
+- (optional) C:\ProgramData\PowerShellArsenal\
 
 2. Installer ausführen
 Rechtsklick → Mit PowerShell ausführen
+
 Der Installer:
 - findet Cyberdeck.zip automatisch
 - findet nmap‑Installer automatisch
