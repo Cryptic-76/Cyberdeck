@@ -162,7 +162,7 @@ Documents\PowerShell\Modules\Cyberdeck\
 -    Cyberdeck.psd1
 -    Cyberdeck.psm1
 
-- .config\
+- $HOME\.config\
 -    starship-ps7.toml
 - Cyberdeck-PortMonitor\
 
