@@ -139,6 +139,8 @@ C:\Users\<USER>\Documents\PowerShell\Modules\Cyberdeck\
 - installiert Arsenal (falls nicht vorhanden)
 - patched dein PowerShell‑Profil
 - aktiviert die Startsequenz
+- es muss eventuell noch der Nmap-Pfad eingetragen werden, soweit nicht im Instller angemerkt
+
 3. PowerShell neu starten
 
 🛠 Voraussetzungen
