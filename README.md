@@ -157,13 +157,14 @@ C:\Users\<USER>\Documents\PowerShell\Modules\Cyberdeck\
 
 📁 Ordnerstruktur nach Installation
 Documents\PowerShell\Modules\Cyberdeck\
-    Public\
-    Private\
-    Cyberdeck.psd1
-    Cyberdeck.psm1
-.config\
-    starship-ps7.toml
-Cyberdeck-PortMonitor\
+-    Public\
+-    Private\
+-    Cyberdeck.psd1
+-    Cyberdeck.psm1
+
+- .config\
+-    starship-ps7.toml
+- Cyberdeck-PortMonitor\
 
 
 🧨 Deinstallation
