@@ -1,4 +1,4 @@
-⚡ Cyberdeck PowerShell Environment v1.3
+⚡ Cyberdeck PowerShell Environment v2.0
 
 Ein vollständig modulares, cyberpunk‑inspiriertes PowerShell‑Framework mit animierter Startsequenz, Port‑Monitoring, Nmap‑Control‑Panel, Fingerprint‑Datenbank, Arsenal‑Forensik‑Subsystem, Malware‑Analyse‑Presets und einem maßgeschneiderten Starship‑Prompt.
 
@@ -119,10 +119,8 @@ $HOME\Cyberdeck-PortMonitor
 1. Dateien vorbereiten
 Lege folgende Dateien in denselben Ordner:
 
-- Cyberdeck.zip
-- nmap-7.98-setup.exe
-- Cyberdeck_Installer_v1.3.ps1
-- (optional) C:\ProgramData\PowerShellArsenal\
+- Cyberdeck_Package.zip
+- Cyberdeck_Installer_v2.0.ps1
 
 2. Installer ausführen
 Rechtsklick → Mit PowerShell ausführen
@@ -140,6 +138,7 @@ C:\Users\<USER>\Documents\PowerShell\Modules\Cyberdeck\
 - patched dein PowerShell‑Profil
 - aktiviert die Startsequenz
 - es muss eventuell noch der Nmap-Pfad eingetragen werden, soweit nicht im Installer angemerkt
+- getestet und voll funktionsfähig
 
 3. PowerShell neu starten
 
