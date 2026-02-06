@@ -5,7 +5,7 @@ Ein vollständig modulares, cyberpunk‑inspiriertes PowerShell‑Framework mit 
 <img width="1228" height="308" alt="2026-02-04 23_15_35-Greenshot" src="https://github.com/user-attachments/assets/583408af-7aeb-40f0-827b-8f7d7e200abb" />
 
 
-🚀 Neu in Version 1.3
+🚀 Neu in Version 2.0
 
 🔥 Arsenal‑Subsystem (PowerShellArsenal Integration)
 
