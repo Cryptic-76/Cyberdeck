@@ -28,7 +28,7 @@ Ein vollständig modulares, cyberpunk‑inspiriertes PowerShell‑Framework mit 
 <img width="1225" height="616" alt="2026-02-05 07_50_40-PowerShell Cyberpunk Terminal Script" src="https://github.com/user-attachments/assets/63e5160e-ad46-4a5c-a1e6-fb00ff30f55a" />
 
 
-🔥 Verbesserter Installer v1.3
+🔥 Verbesserter Installer v2.0
 - Erkennt vorhandenes Arsenal
 - Installiert Arsenal nur, wenn es fehlt
 - Kopiert lokale Arsenal‑Version automatisch
